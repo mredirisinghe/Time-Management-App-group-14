@@ -6,5 +6,5 @@ use Illuminate\Http\Request;
 
 class TimeController extends Controller
 {
-    //
+    public function edit($id) { return TimeController::findOrFail($id); }
 }
