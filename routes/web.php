@@ -8,8 +8,8 @@ Route::get('/', function () {
 
 
 Route::get('/token', function () { return csrf_token(); });
-Route::post('employee', [EmployeeController::class, 'store']); 
-Route::get('employee/all', [EmployeeController::class, 'all']);
-Route::get('employee/{id}/edit', [EmployeeController::class, 'edit']); 
-Route::post('employee/{id}', [EmployeeController::class, 'update']); 
-Route::delete('employee/{id}', [EmployeeController::class, 'delete']);
+Route::post('time', [TimeController::class, 'store']); 
+Route::get('time/all', [TimeController::class, 'all']);
+Route::get('time/{id}/edit', [TimeController::class, 'edit']); 
+Route::post('time/{id}', [TimeController::class, 'update']); 
+Route::delete('time/{id}', [TimeController::class, 'delete']);
